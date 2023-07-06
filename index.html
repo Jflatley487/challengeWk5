@@ -34,12 +34,19 @@
         <div id="end-screen" class="end hide">
             <h2>Quiz Complete!</h2>
             <p>Your final score is <span id="score"></span></p>
-            <form action="highscores.php" method="post">
+            <form id="high-score-form">
                 <label for="initials">Enter Initials:</label>
-                <input type="text" name="initials" id="initials">
-                <button type="submit-btn">Submit</button>
+                <input type="text" name="initials" id="initials-input" required>
+                <button type="submit" id="submit-btn">Submit</button>
             </form>
         </div>
+
+        <div id="high-scores" class="hide">
+            <h2>High Scores</h2>
+            <ul id="high-scores-list"></ul>
+            <button id="clear-scores-btn">Clear Scores</button>
+        </div>
+
     </main>
     <script src="script.js"></script>
 </body>
