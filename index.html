@@ -7,27 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="panel">
-        <div class="result">
- 
+    <header>
+        <h1>Coding Quiz</h1>
+    </header>
+
+    <main>
+        <div class="start">
+            <h2>Are you ready to test your coding knowledge?</h2>
+            <button id="start">Start Quiz</button>
         </div>
-        <div class="question-container" id="question">
-            Question goes here.
+
+        <div class="quiz">
+            <div class="question">
+                <h2>Question</h2>
+                <p id="question"></p>
+            </div>
+
+            <div class="answers">
+                <button class="answer" id="a"></button>
+                <button class="answer" id="b"></button>
+                <button class="answer" id="c"></button>
+                <button class="answer" id="d"></button>
+            </div>
         </div>
-        <div class="option-container">
-            <button class="option" onclick="" id="op1" >option1</button>
-     
-            <button class="option" id="op2" >option2</button>
-     
-            <button class="option" id="op3">option3</button>
-     
-            <button class="option" id="op4">option4</button>
+
+        <div class="end">
+            <h2>Quiz Complete!</h2>
+            <p>Your final score is <span id="score"></span></p>
+            <form action="highscores.php" method="post">
+                <label for="initials">Enter Initials:</label>
+                <input type="text" name="initials" id="initials">
+                <button type="submit">Submit</button>
+            </form>
         </div>
-        <div class="navigation">
-            <button class="evaluate">Evaluate</button>
-            <button class="next">Next</button>
-        </div>
-    </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
