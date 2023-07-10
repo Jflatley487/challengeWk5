@@ -7,18 +7,20 @@ body {
 	line-height: 1.5;
 	color: #333;
 	background-color: #fff;
+	background-image: url(https://media.istockphoto.com/id/1218473959/vector/black-question-mark.jpg?s=612x612&w=0&k=20&c=ifwnh6ETDDshoL_vddFWbdbseFN0UrtYMi8JfQHBitQ=);
 }
 
 /* Header */
 header {
-	background-color: #333;
-	color: #fff;
+	background-color:black; 
+	color: white;
 	padding: 1rem;
 	text-align: center;
 }
 
 /* Main Content */
 main {
+	
 	max-width: 600px;
 	margin: 20px auto;
 	padding: 20px;
@@ -49,3 +51,70 @@ h1, h2 {
 .hide {
 	display: none;
 }
+
+.start {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+  }
+  
+  #start-btn {
+	margin-top: 1rem;
+  }
+  
+  #high-scores {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top:2em
+	
+  }
+  
+  #high-scores-list {
+	margin-top: 0rem;
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  #clear-scores-btn {
+	margin-top: 1rem;
+	
+  }
+  
+  button {
+	background-color: #4CAF50; /* Change the background color */
+	color: white; /* Change the text color */
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 5px; 
+  }
+
+  button:hover	{
+	background-color: purple;
+}
+
+#end-screen {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+  }
+  
+  #end-screen h2, #end-screen p {
+	margin: 10px 0;
+  }
+  
+
