@@ -15,32 +15,38 @@
     <main>
         <div class="start">
             <h2>Are you ready to test your coding knowledge?</h2>
-            <button id="start">Start Quiz</button>
+            <button id="start-btn">Start Quiz</button>
         </div>
 
-        <div class="quiz">
-            <div class="question">
-                <h2>Question</h2>
-                <p id="question"></p>
+        <div id="quiz-container" class="quiz hide">
+              <h2>Question</h2>
+              <p id="question"></p>
+          
+            <div id="choices-container" class="answers">
+
             </div>
 
-            <div class="answers">
-                <button class="answer" id="a"></button>
-                <button class="answer" id="b"></button>
-                <button class="answer" id="c"></button>
-                <button class="answer" id="d"></button>
-            </div>
+            <div id="timer">Time: 60s</div>
         </div>
+          
+          
 
-        <div class="end">
+        <div id="end-screen" class="end hide">
             <h2>Quiz Complete!</h2>
             <p>Your final score is <span id="score"></span></p>
-            <form action="highscores.php" method="post">
+            <form id="high-score-form">
                 <label for="initials">Enter Initials:</label>
-                <input type="text" name="initials" id="initials">
-                <button type="submit">Submit</button>
+                <input type="text" name="initials" id="initials-input" required>
+                <button type="submit" id="submit-btn">Submit</button>
             </form>
         </div>
+
+        <div id="high-scores" class="hide">
+            <h2>High Scores</h2>
+            <ul id="high-scores-list"></ul>
+            <button id="clear-scores-btn">Clear Scores</button>
+        </div>
+
     </main>
     <script src="script.js"></script>
 </body>
